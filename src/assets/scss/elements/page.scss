@@ -1,0 +1,24 @@
+* {
+    box-sizing: inherit;
+}
+
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $ffPrimary;
+    font-weight: $fwRegular;
+    line-height: $lhBase / $fzBase;
+    @include font-size($fzBase);
+    color: $colorText;
+    background-color: $colorBackground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

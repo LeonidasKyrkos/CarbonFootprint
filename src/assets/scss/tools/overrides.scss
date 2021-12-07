@@ -1,0 +1,67 @@
+.carousel {
+    &__pagination-button {
+        width: 8px !important;
+        height: 8px !important;
+        border-radius: 100% !important;
+        padding: 0 !important;
+        background-color: white !important;
+        margin: 0 em(8) !important;
+    }
+
+    &__pagination-button--active {
+        background-color: $color2 !important;
+    }
+
+    &__next,
+    &__prev {
+        background-color: transparent !important;
+
+        path {
+            fill: $color2 !important;
+        }
+    }
+}
+
+$module: "job-search";
+
+:root {
+    --ms-font-size: 1.8rem;
+    --ms-option-font-size: 1.8rem;
+}
+
+.multiselect {
+    color: $color1 !important;
+    font-size: em($fzBase) !important;
+    height: em(49) !important;
+    border-radius: 0 !important;
+
+    .#{$module}__inline-control:first-child & {
+        border-top-left-radius: em(20) !important;
+        border-bottom-left-radius: em(20) !important;
+    }
+
+    .#{$module}__inline-control:last-child & {
+        border-top-right-radius: em(20) !important;
+        border-bottom-right-radius: em(20) !important;
+    }
+
+    @include mqMax(l) {
+        .#{$module}__inline-control:nth-child(odd) & {
+            border-top-left-radius: em(20) !important;
+            border-bottom-left-radius: em(20) !important;
+        }
+
+        .#{$module}__inline-control:nth-child(even) & {
+            border-top-right-radius: em(20) !important;
+            border-bottom-right-radius: em(20) !important;
+        }
+    }
+
+    @include mqMax(s) {
+        border-radius: em(20) !important;
+    }
+}
+
+.multiselect-search {
+    background-color: transparent !important;
+}

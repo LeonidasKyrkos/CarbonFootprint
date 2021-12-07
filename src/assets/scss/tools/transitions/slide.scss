@@ -1,0 +1,19 @@
+$duration: 0.3s;
+
+.slide-leave-to {
+    transform: translateX(-100%);
+}
+
+.slide-enter-from {
+    transform: translateX(100%);
+}
+
+.slide-enter-to,
+.slide-leave {
+    transform: translateX(0);
+}
+
+.slide-enter-active,
+.slide-leave-active {
+    transition: transform $duration linear;
+}

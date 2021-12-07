@@ -1,0 +1,67 @@
+// variables //
+
+// Layout
+$spacingAtom: 8;
+$spacingSmall: $spacingAtom * 2;
+$spacingMedium: $spacingAtom * 3;
+$spacingLarge: $spacingAtom * 4;
+
+// Typography
+// -------------------------
+
+// family
+$ffPrimary: "Inter", "Helvetica";
+$ffSecondary: $ffPrimary;
+
+$ffHeadings: $ffSecondary;
+
+$fwLight: 300;
+$fwRegular: 400;
+$fwSemiBold: 600;
+$fwBold: 700;
+
+// style
+$fzBase: 18 !default;
+$lhBase: 26 !default;
+$fwBase: 400;
+
+// Colours
+$color1: #0b3a55;
+$color2: #0eae92;
+$colorText: black;
+$colorBackground: #f4f4f4;
+
+// Colour roles
+$colorNegative: #d9534f;
+$colorPositive: #5cb85c;
+
+$breakpoints: (
+    xxxxl: 1700px,
+    xxxl: 1650px,
+    xxxl-b: 1500px,
+    xxxl-c: 1400px,
+    xxl: 1300px,
+    xl: 1250px,
+    xl-a: 1200px,
+    xl-b: 1150px,
+    xl-c: 1100px,
+    l: 1050px,
+    l-a: 1000px,
+    l-b: 950px,
+    l-c: 900px,
+    m: 850px,
+    m-a: 800px,
+    m-b: 750px,
+    m-b-a: 730px,
+    m-c: 700px,
+    m-c-a: 670px,
+    s: 650px,
+    s--a: 620px,
+    s-a: 600px,
+    s-b: 550px,
+    s-c: 500px,
+    xs: 450px,
+    xs-a: 400px,
+    xs-b: 350px,
+    xs-c: 315px,
+);
