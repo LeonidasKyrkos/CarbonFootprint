@@ -34,6 +34,11 @@ $module: "alpha";
     font-weight: 700;
     line-height: (58.09 / $fz);
 
+    @include mqMax(m) {
+        $fz: 38;
+        font-size: em($fz);
+    }
+
     &.with-margin {
         margin-bottom: em(69, $fz);
     }

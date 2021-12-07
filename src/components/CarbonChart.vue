@@ -95,7 +95,7 @@ export default defineComponent({
         });
 
         const incrementYear = () => {
-            if (currentYear.value <= 2017) {
+            if (currentYear.value <= 2016) {
                 currentYear.value++;
             }
         };
@@ -113,7 +113,7 @@ export default defineComponent({
         const resetInterval = () => {
             interval && clearInterval(interval);
 
-            interval = setInterval(incrementYear, 1500);
+            interval = setInterval(incrementYear, 500);
         };
 
         onMounted(() => {
@@ -184,6 +184,10 @@ $animationDuration: 0.3s;
         transform-origin: left;
         transition: transform $animationDuration ease;
         border-radius: em(5);
+
+        @include mqMax(s) {
+            left: em(100);
+        }
     }
 
     &__item-name {
@@ -196,6 +200,10 @@ $animationDuration: 0.3s;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+
+        @include mqMax(s) {
+            width: em(80, $fz);
+        }
     }
 
     &__item-total {
@@ -210,12 +218,18 @@ $animationDuration: 0.3s;
     &__headings {
         display: flex;
         justify-content: center;
-        margin-bottom: em(57);
+        margin: 0 em(69) em(57);
     }
 
     &__heading {
         text-align: center;
         margin: 0 em(69);
+
+        @include mqMax(m) {
+            $fz: 14;
+            font-size: em($fz);
+            margin: 0 em(32, $fz);
+        }
     }
 
     &__heading-label {
