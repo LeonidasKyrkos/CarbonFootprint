@@ -1,5 +1,7 @@
 # carbon-footprint-graph
 
+Basic prototype for a worldwide carbon footprint graph between the 1960s and 2018
+
 ## Project setup
 
 ```
@@ -16,18 +18,6 @@ yarn serve
 
 ```
 yarn build
-```
-
-### Run your unit tests
-
-```
-yarn test:unit
-```
-
-### Lints and fixes files
-
-```
-yarn lint
 ```
 
 ### Customize configuration
