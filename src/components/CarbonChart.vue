@@ -113,7 +113,7 @@ export default defineComponent({
         const resetInterval = () => {
             interval && clearInterval(interval);
 
-            interval = setInterval(incrementYear, 500);
+            interval = setInterval(incrementYear, 3000);
         };
 
         onMounted(() => {
